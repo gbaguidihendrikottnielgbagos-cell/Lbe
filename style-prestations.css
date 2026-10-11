@@ -1,0 +1,81 @@
+/* Styles propres à la page Prestations Lovely Beauty Empire */
+:root {
+    --prest-cream: #FFF9F0;
+    --prest-rose: #EF629F;
+    --prest-pink: #A93468;
+    --prest-champagne: #E8C9A0;
+    --prest-brown: #3B2925;
+    --prest-muted: #78645E;
+    --prest-white: #FFFFFF;
+    --prest-shadow: 0 18px 45px rgba(74, 48, 43, 0.09);
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+.services-page { overflow: hidden; color: var(--prest-brown); background: var(--prest-cream); }
+.services-page * { box-sizing: border-box; }
+.services-page a { -webkit-tap-highlight-color: transparent; }
+.eyebrow { display: inline-block; margin-bottom: 14px; color: var(--prest-pink); font-size: .76rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+
+.services-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: clamp(78px, 10vw, 132px) max(7vw, calc((100vw - 1180px) / 2));
+    background: linear-gradient(118deg, #EECDA3 0%, #F3D1C1 48%, #EF629F 100%);
+}
+.services-hero::before, .services-hero::after { position: absolute; z-index: -1; content: ""; border: 1px solid rgba(255,255,255,.42); border-radius: 50%; }
+.services-hero::before { width: 420px; height: 420px; right: -90px; top: -170px; }
+.services-hero::after { width: 300px; height: 300px; right: 10px; top: -105px; }
+.services-hero h1 { max-width: 780px; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 6vw, 5.3rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.04; }
+.services-hero > p { max-width: 650px; margin: 24px 0 30px; color: #503832; font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.85; }
+.hero-decoration { position: absolute; right: 12%; bottom: -110px; color: rgba(255,255,255,.23); font-family: Georgia, serif; font-size: clamp(18rem, 35vw, 31rem); line-height: .9; pointer-events: none; }
+.services-button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; min-height: 50px; padding: 14px 22px; border: 1px solid var(--prest-pink); border-radius: 3px; background: var(--prest-pink); color: white; font-size: .9rem; font-weight: 700; text-decoration: none; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.services-button:hover { transform: translateY(-2px); background: #84274f; box-shadow: 0 10px 24px rgba(169,52,104,.18); }
+
+.services-intro { max-width: 790px; margin: 0 auto; padding: 82px 24px 48px; text-align: center; }
+.services-intro h2, .services-bottom h2 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 500; letter-spacing: -.035em; line-height: 1.15; }
+.services-intro p { max-width: 650px; margin: 18px auto 0; color: var(--prest-muted); line-height: 1.8; }
+
+.services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px; max-width: 1240px; margin: 0 auto; padding: 0 28px 90px; }
+.service-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border: 1px solid rgba(232,201,160,.68); border-radius: 8px; background: var(--prest-white); box-shadow: var(--prest-shadow); scroll-margin-top: 110px; transition: transform .25s ease, box-shadow .25s ease; }
+.service-card:hover { transform: translateY(-5px); box-shadow: 0 24px 52px rgba(74,48,43,.14); }
+.service-image-wrap { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #F3E7DE; }
+.service-image-wrap::after { position: absolute; inset: 45% 0 0; content: ""; background: linear-gradient(transparent, rgba(59,41,37,.15)); pointer-events: none; }
+.service-image-wrap img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.service-card:hover .service-image-wrap img { transform: scale(1.045); }
+.service-content { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 25px 25px 26px; }
+.service-number { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; margin-bottom: 17px; border: 1px solid var(--prest-champagne); border-radius: 50%; color: var(--prest-pink); font-size: .76rem; font-weight: 800; }
+.service-content h2 { margin: 0 0 12px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.35rem, 2vw, 1.65rem); font-weight: 500; line-height: 1.2; }
+.service-content p { margin: 0 0 22px; color: var(--prest-muted); font-size: .94rem; line-height: 1.75; }
+.service-content p strong { color: var(--prest-brown); }
+.service-link { display: inline-flex; align-items: center; gap: 12px; margin-top: auto; padding-bottom: 4px; border-bottom: 1px solid var(--prest-champagne); color: var(--prest-pink); font-size: .88rem; font-weight: 800; text-decoration: none; }
+.service-link:hover { color: #84274f; border-color: var(--prest-pink); }
+.service-card-featured { border-color: rgba(169,52,104,.38); }
+
+.services-bottom { position: relative; margin: 0 28px 88px; padding: clamp(42px, 7vw, 76px) 24px; border: 1px solid var(--prest-champagne); border-radius: 8px; background: linear-gradient(115deg, #FFF9F0, #F8E3E4); text-align: center; }
+.services-bottom h2 { max-width: 760px; margin: 0 auto; }
+.services-bottom > p:not(.contact-detail) { max-width: 660px; margin: 18px auto 26px; color: var(--prest-muted); line-height: 1.8; }
+.contact-detail { margin: 18px 0 0; color: var(--prest-muted); font-size: .85rem; }
+
+/* L'en-tête et le pied de page sont gérés par style.css */
+@media (max-width: 950px) {
+    .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .services-hero { padding-right: 7vw; padding-left: 7vw; }
+    .hero-decoration { right: -2%; }
+}
+@media (max-width: 600px) {
+    .services-hero { padding: 72px 22px 68px; }
+    .services-hero h1 { font-size: clamp(2.45rem, 12vw, 3.7rem); }
+    .services-hero > p { font-size: .98rem; line-height: 1.75; }
+    .hero-decoration { right: -35px; bottom: -45px; font-size: 17rem; }
+    .services-intro { padding: 58px 22px 32px; }
+    .services-grid { grid-template-columns: 1fr; gap: 20px; padding: 0 18px 60px; }
+    .service-image-wrap { aspect-ratio: 5 / 3; }
+    .service-content { padding: 23px 22px 25px; }
+    .services-bottom { margin: 0 18px 58px; padding: 42px 20px; }
+    .contact-detail { line-height: 1.8; overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}

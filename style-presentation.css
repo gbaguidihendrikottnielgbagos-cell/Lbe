@@ -1,0 +1,398 @@
+/* =========================================
+   PAGE PRÉSENTATION — LOVELY BEAUTY EMPIRE
+   Complément à style.css (header et footer)
+========================================= */
+
+.presentation-page {
+    --presentation-cream: #FFF9F0;
+    --presentation-champagne: #E8C9A0;
+    --presentation-pink: #EF629F;
+    --presentation-berry: #A93468;
+    --presentation-brown: #4A302B;
+    --presentation-muted: #795D56;
+    width: min(1160px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 38px 0 20px;
+    color: var(--presentation-brown);
+}
+
+.presentation-page * {
+    box-sizing: border-box;
+}
+
+.presentation-page h1,
+.presentation-page h2,
+.presentation-page p {
+    margin-top: 0;
+}
+
+.presentation-page p {
+    color: var(--presentation-muted);
+    font-size: 1.02rem;
+    line-height: 1.9;
+}
+
+.presentation-page a {
+    transition: color 0.22s ease, background-color 0.22s ease,
+        transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+/* Hero */
+
+.presentation-hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    padding: clamp(48px, 8vw, 92px) clamp(24px, 6vw, 76px);
+    text-align: center;
+    background:
+        radial-gradient(circle at 12% 10%, rgba(239, 98, 159, 0.18), transparent 35%),
+        linear-gradient(135deg, #FFF9F0 0%, #F8E5D6 55%, #F7D6E2 100%);
+    border: 1px solid var(--presentation-champagne);
+    border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(79, 43, 39, 0.08);
+}
+
+.presentation-hero::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 220px;
+    height: 220px;
+    right: -75px;
+    bottom: -110px;
+    border: 1px solid rgba(169, 52, 104, 0.18);
+    border-radius: 50%;
+    box-shadow: 0 0 0 24px rgba(169, 52, 104, 0.035),
+                0 0 0 48px rgba(169, 52, 104, 0.025);
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--presentation-berry);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.presentation-hero h1 {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: var(--presentation-brown);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 5vw, 4.1rem);
+    font-weight: 600;
+    line-height: 1.12;
+    text-wrap: balance;
+}
+
+.hero-intro {
+    max-width: 720px;
+    margin: 0 auto 28px !important;
+    color: #6C5049 !important;
+    font-size: clamp(1rem, 1.6vw, 1.15rem) !important;
+}
+
+.presentation-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 48px;
+    padding: 13px 22px;
+    color: #FFFFFF !important;
+    background: linear-gradient(135deg, #A93468, #C84F82);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(169, 52, 104, 0.18);
+    font-size: 0.94rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.presentation-cta:hover {
+    color: #FFFFFF !important;
+    background: linear-gradient(135deg, #84284F, #A93468);
+    box-shadow: 0 11px 25px rgba(169, 52, 104, 0.24);
+    transform: translateY(-2px);
+}
+
+/* Histoire */
+
+.presentation-panel {
+    margin-top: 36px;
+    padding: clamp(25px, 5vw, 55px);
+    background: rgba(255, 249, 240, 0.92);
+    border: 1px solid rgba(232, 201, 160, 0.85);
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(79, 43, 39, 0.055);
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.section-heading h2,
+.founder-content h2,
+.presentation-bottom h2 {
+    margin-bottom: 0;
+    color: var(--presentation-brown);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3.4vw, 2.7rem);
+    font-weight: 600;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+.story-copy {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.story-copy p {
+    margin-bottom: 18px;
+}
+
+.story-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.story-copy a {
+    color: var(--presentation-berry);
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.story-copy a:hover {
+    color: #84284F;
+}
+
+.story-copy strong {
+    color: var(--presentation-brown);
+}
+
+.story-highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 900px;
+    margin: 32px auto 0;
+    padding: 20px 24px;
+    background: linear-gradient(110deg, rgba(243, 209, 193, 0.5), rgba(252, 234, 240, 0.75));
+    border-left: 3px solid var(--presentation-pink);
+    border-radius: 0 15px 15px 0;
+}
+
+.highlight-mark {
+    color: var(--presentation-berry);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    line-height: 0.9;
+}
+
+.story-highlight p {
+    margin: 0;
+    color: var(--presentation-brown);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.12rem;
+    font-style: italic;
+    line-height: 1.65;
+}
+
+/* Fondatrice */
+
+.founder-section {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.4fr);
+    align-items: start;
+    gap: clamp(28px, 5vw, 62px);
+    margin-top: 38px;
+    padding: clamp(24px, 4vw, 46px);
+    background: #FFFFFF;
+    border: 1px solid rgba(232, 201, 160, 0.8);
+    border-radius: 24px;
+    box-shadow: 0 15px 38px rgba(79, 43, 39, 0.07);
+}
+
+.founder-image-wrap {
+    position: sticky;
+    top: 125px;
+    overflow: hidden;
+    padding: 10px;
+    background: linear-gradient(145deg, #F3D1C1, #EF629F);
+    border-radius: 22px;
+    box-shadow: 0 15px 30px rgba(79, 43, 39, 0.12);
+}
+
+.founder-image {
+    display: block;
+    width: 100%;
+    max-height: 540px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid rgba(255, 249, 240, 0.9);
+    border-radius: 15px;
+}
+
+.image-caption {
+    display: block;
+    padding: 13px 8px 5px;
+    color: #4A302B;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.founder-content h2 {
+    margin-bottom: 23px;
+}
+
+.founder-content p {
+    margin-bottom: 17px;
+}
+
+.founder-content .presentation-cta {
+    margin-top: 5px;
+}
+
+/* Invitation finale */
+
+.presentation-bottom {
+    margin-top: 38px;
+    padding: clamp(32px, 6vw, 58px) 24px;
+    text-align: center;
+    background:
+        radial-gradient(circle at 90% 10%, rgba(239, 98, 159, 0.18), transparent 30%),
+        linear-gradient(135deg, #4A302B, #382321);
+    border: 1px solid rgba(232, 201, 160, 0.7);
+    border-radius: 24px;
+}
+
+.presentation-bottom h2 {
+    max-width: 760px;
+    margin: 0 auto 15px;
+    color: #FFF9F0;
+}
+
+.presentation-bottom p {
+    max-width: 680px;
+    margin: 0 auto 24px;
+    color: #E8D6CE;
+}
+
+/* Tablettes */
+
+@media (max-width: 820px) {
+    .presentation-page {
+        width: min(100% - 32px, 720px);
+        padding-top: 25px;
+    }
+
+    .founder-section {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 25px;
+        padding: 24px;
+    }
+
+    .founder-image-wrap {
+        top: 110px;
+    }
+
+    .founder-image {
+        aspect-ratio: 3 / 4;
+    }
+}
+
+/* Téléphones */
+
+@media (max-width: 620px) {
+    .presentation-page {
+        width: calc(100% - 24px);
+        padding-top: 18px;
+    }
+
+    .presentation-hero {
+        padding: 42px 21px;
+        border-radius: 20px;
+    }
+
+    .presentation-hero h1 {
+        font-size: clamp(2rem, 9vw, 2.8rem);
+    }
+
+    .eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    .presentation-panel {
+        margin-top: 22px;
+        padding: 24px 19px;
+        border-radius: 19px;
+    }
+
+    .section-heading {
+        margin-bottom: 22px;
+    }
+
+    .story-copy p,
+    .founder-content p {
+        font-size: 0.98rem;
+        line-height: 1.8;
+    }
+
+    .story-highlight {
+        gap: 10px;
+        margin-top: 24px;
+        padding: 17px;
+    }
+
+    .story-highlight p {
+        font-size: 1rem;
+    }
+
+    .founder-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 22px;
+        padding: 18px;
+        border-radius: 19px;
+    }
+
+    .founder-image-wrap {
+        position: static;
+        width: min(100%, 380px);
+        margin: 0 auto;
+    }
+
+    .founder-image {
+        max-height: 460px;
+        aspect-ratio: 4 / 4.5;
+    }
+
+    .founder-content h2 {
+        margin-bottom: 18px;
+    }
+
+    .presentation-bottom {
+        margin-top: 22px;
+        padding: 34px 20px;
+        border-radius: 19px;
+    }
+}
+
+/* Respect des préférences d'accessibilité */
+
+@media (prefers-reduced-motion: reduce) {
+    .presentation-page a {
+        transition: none;
+    }
+}
